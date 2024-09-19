@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Senai saude</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		body {
+			background-image: url('');
+		}
+
+		.bg-color {
+			background-color: #80C1EB;
+			padding: 25px;
+		}
+
+		.img-logo {
+			width: 70px;
+			height: 70x;
+
+		}
+		
+		.menu{
+			border: none;
+		}
+		.menu:hover,
+		.menu:active{
+			border: none;
+		}
+	</style>
+
+</head>
+
+<body>
+	<nav class="navbar bg-color">
+		<div class="container-fluid">
+			<img class="img-logo" src="imagens/logo11.png">
+			<button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Projeto Saúde</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Aluno.html">Cadastro Aluno</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="psicologa.html">Cadastro Psicologo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="agendamento.html">Agendamentos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="HorarioDisponivel.html">Horarios Disponíves</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ajudando.html">Ajudando</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="suporte.html">Suporte</a>
+						</li>
+
+
+
+					</ul>
+					<form class="d-flex mt-3" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="bg">
+	</section>
+</body>
+
+
+
+<body a>
+	<title>Suporte</title>
+	<div class="container">
+		<h1>Suporte-Telefones</h1>
+		<div class="buttons">
+			<div class="button">
+				<a href="https://wa.me/5511952202923"><span>&#128222;</span> Governo: 121</a>
+			</div>
+			<div class="button" >
+				<a href="https://cvv.org.br/chat/"><span>&#128222;</span> Valorização da Vida: 188</a>
+			</div>
+			<div class="button">
+				<a href="tel:193"><span>&#128222;</span> Bombeiro: 193</a>
+			</div>
+			<div class="button">
+				<a href="tel:192"><span>&#128222;</span> Ambulância: 192</a>
+			</div>
+		</div>
+	</div>
+</body a>
+<style>
+	body a {
+		margin: 5px;
+		font-family: Arial, sans-serif;
+		background-color: #e3f2f5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+           
+	}
+
+	.container {
+		text-align: center;
+		margin-block: 30px;
+	}
+	
+	h1{
+		margin-block: 50px;
+	}
+
+	h1 {
+		color: #333;
+	}
+
+	.buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		justify-items: center;
+	}
+
+	.button a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+		background-color:  #e6f2ff;
+		border: 2px solid  #e6f2ff;
+		border-radius: 10px;
+		color: #333;
+		font-size: 14px;
+		flex-wrap: nowrap;
+		text-decoration: none;
+		transition: background-color 0.3s, border-color 0.3s;
+		width: 300px;
+	}
+
+	.button a:hover {
+		background-color:  #e6f2ff;
+		border-color: #7ec3e6;
+	}
+
+	.button span {
+		margin-right: 10px;
+	}
+	
+	.tell{
+		color: black;
+	}
+
+	.title {
+		align-items: center;
+		justify-content: center;
+		padding: 15px 20px;
+		margin-bottom: 40px;
+	}
+</style>
+
+</html>

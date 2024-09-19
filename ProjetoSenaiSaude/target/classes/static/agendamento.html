@@ -1,0 +1,175 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Senai saude</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		body {
+			background-image: url('');
+			background-color: #DCF3F6;
+			
+		}
+
+		.bg-color {
+			background-color: #80C1EB;
+			padding: 25px;
+		}
+
+		.img-logo {
+			width: 70px;
+			height: 70x;
+
+		}
+
+		.bg {
+			background-image: url('imagens/fundo.png');
+			background-size: cover;
+			position: top center;
+			height: 84dvh;
+		}
+	.content{
+		padding: 25px;
+		
+				
+	}
+	
+	#agendamentoFormModal{
+		padding: 30px;
+		
+	}
+	
+		.botao-1{
+		color: #fff;
+		background-color: #174580;
+		border: none;
+	}
+	
+	.botao-1:hover {
+		background-color: #174580;
+
+	}
+	
+	.menu{
+			border: none;
+		}
+		.menu:hover,
+		.menu:active{
+			border: none;
+		}
+		
+		
+	</style>
+    	<script src="js/agendamento.js"></script>
+</head>
+
+<body>
+	<nav class="navbar bg-color">
+		<div class="container-fluid">
+			<img class="img-logo" src="imagens/logo11.png">
+			<button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Projeto Saúde</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="aluno.html">Cadastro Aluno</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="psicologa.html">Cadastro Psicologo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="agendamento.html">Agendamentos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="HorarioDisponivel.html">Horarios Disponíves</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ajudando.html">Ajudando</a>
+						</li>
+							<li class="nav-item">
+							<a class="nav-link" href="suporte.html">Suporte</a>
+						</li>
+					
+					
+					
+					</ul>
+					<form class="d-flex mt-3" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+	</nav>
+	
+	<div class="content">
+			<h2>Agendamentos</h2>
+			<button class=" botao-1 btn btn-primary mb-3" onclick="ShowAddAgendamento()">Incluir</button>
+			<table class="table">
+				<thead>
+					<tr>
+						<th style="background-color: #DCF3F6;">ID</th>
+						<th style="background-color: #DCF3F6;">Nome</th>
+						<th style="background-color: #DCF3F6;">Email</th>
+						<th style="background-color: #DCF3F6;">Data</th>
+						<th style="background-color: #DCF3F6;">Horário</th>
+						<th style="background-color: #DCF3F6;">Ações</th>
+						
+					</tr>
+				</thead>
+				<tbody id="agendamentoTableBody">
+					<!-- Quartos serão carregados aqui -->
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="agendamentoFormModal" style="display:none;">
+			<h3 id="formTitle">Incluir Agendamentos</h3>
+			<form id="agendamentoForm">
+				<input type="hidden" id="agendamentoId">
+				<div class="mb-3">
+					<label for="agendamentoNome" class="form-label">Nome</label>
+					<input type="text" class="form-control" id="agendamentoNome" required>
+				</div>
+				<div class="mb-3">
+					<label for="agendamentoEmail" class="form-label">Email</label>
+					<input type="text" class="form-control" id="agendamentoEmail" required>
+				</div>
+				<div class="mb-3">
+					<label for="agendamentoData" class="form-label">Data</label>
+					<input type="text" class="form-control" id="agendamentoData" required>
+				</div>
+				<div class="mb-3">
+					<label for="agendamentoHorario" class="form-label">Horario</label>
+					<input type="text" class="form-control" id="agendamentoHorario" required>
+				</div>
+
+
+			<button type="submit" class=" botao-1 btn btn-primary " onclick="showAddGuestForm()">Save</button>
+				<button type="button" class="btn btn-secondary" onclick="closeAgendamentoForm()">Cancel</button>
+			</form>
+		</div>
+	</div>
+
+	
+	
+
+	
+	</body>
+
+</html>
